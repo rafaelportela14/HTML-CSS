@@ -1,0 +1,37 @@
+header{
+    background-color:#F9B03F ;
+    padding: -03px;
+    margin: 04px;
+}
+
+h1{
+    text-align:center;
+    padding: 00px;
+    margin: 0px;
+    color: #9A1220;
+}
+
+nav{
+    background-color: #9A1220;
+    padding: 3px;
+    box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493);
+}
+
+nav > a {
+    text-decoration: none;
+    color: #f1f0e8;
+    font-weight: lighter;
+    margin-right: 30px;
+
+
+footer{
+    background-color: #9A1220;
+    color: white;
+    text-align: center;
+    padding: px;
+    margin: 05px;
+}
+
+footer > p{
+    margin: 10px;
+}

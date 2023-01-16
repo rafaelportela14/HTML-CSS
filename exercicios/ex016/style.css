@@ -1,0 +1,14 @@
+*{
+    height: 100%; /* configuração global das CSS*/
+}
+
+body
+{
+    background-image: linear-gradient(to right,#11F596,#32C286,#0CA867,#087548);
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    border-color: black;
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'wc';
+    src: url('fonts/Welcome Christmas.otf') format('opentype'),url('fonts/Welcome Christmas.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+    font-family: wc, Times, serif;
+    font-size: 6em;
+    color: red;
+    font-weight: normal;
+}
+

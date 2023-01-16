@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div:hover{
+    color: red;
+}
+
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+
+a:visited{
+    color: darkred;
+}
+
+a:hover{
+    text-decoration: solid
+    
+}
+
+.especial:hover{
+    color: wheat;
+    background-color: black;
+    text-decoration: none;
+}
