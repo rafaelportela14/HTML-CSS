@@ -2,6 +2,12 @@ header{
     background-color:#F9B03F ;
     padding: -03px;
     margin: 04px;
+    background-position: right center;
+    background-size: cover;
+}
+
+body{
+    background-color: black;
 }
 
 h1{
