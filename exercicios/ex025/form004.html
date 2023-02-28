@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
     <fieldset id="dadospessoais">
         <legend>Dados pessoais</legend>
         <p>
@@ -21,18 +21,47 @@
         </p>
         <label for="itel">Telefone</label>
         <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        
     </fieldset>
-            <label for="´filmes">Filmes</label>
-            <input type="checkbox" name="filmes" id="ifilmes">
+        
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imasc" value="M"> Masculino
+        <input type="radio" name="sexo" id="ifem" value="F" checked> Femenino
+
+    </fieldset>        
     <fieldset>
 
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut" >Futebol</label> <br>
+        <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+        <input type="checkbox" name="esbt" id="iesbt"> <label for="iesbt">Beach Tenis</label> <br>
+        <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">Volei</label> <br>
     </fieldset>
 
+    <fieldset>
+        <legend>Cor</legend>
+        
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#DB0630">
+        </p>
+    </fieldset>
 
+  
+
+    <p>
+        <label for="inivel">Nível de Satisfação: </label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5">
+    </p>
+    <p>
+        <label for="ifoto">Foto do Perfil:</label>
+        <input type="file" name="foto" id="ifoto">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
     </form>
 </body>
 </html>
