@@ -99,9 +99,50 @@
     </p>
 
     <p>
+        <label for="inum1">Numero 1: </label>
+        <input type="number" name="num1" id="inum1" min="0" max="50" required oninput="isoma.innerHTML= Number(inum1.value) + Number(inum2.value)">
+    </p>
+
+    <p>
+        <label for="inum2">Numero 1: </label>
+        <input type="number" name="num2" id="inum2" min="0" max="50" required oninput="isoma.innerHTML= Number(inum1.value) + Number(inum2.value)" >
+    </p>
+
+    <p>
+        <label for="isoma">Soma: </label>
+        <output name="soma" id="isoma">0</output>
+        
+    </p>
+
+    <p>
+        <label for="inum">Numero: </label>
+        <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML=Number(inum.value)">
+        <output id="ival">5</output>
+    </p>
+
+    <p>
+        <label for="iano">Em que ano você nasceu?</label>
+        <input type="number" name="ano" id="iano" min="1900" max="2023" oninput="calcIdade()">
+    </p>
+
+    <p>
+        <label for="iidade">Sua idade: </label>
+        <output id="iidade">0</output>
+    </p>
+
+    <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </p>
+
+   
     </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
